@@ -10,7 +10,7 @@ function App() {
   const [stepp, setStepp] = useState<Step>(1)
   const [history,setHistory]= useState<Count[]>([])
   const [message,setMessage]= useState<Status>("idle")
-  const [load,setLoad]= useState<"Loading"|"Page Loaded!"|"">("")
+  
 
 
   useEffect(()=>{
@@ -27,7 +27,30 @@ function App() {
 
   },[count])
 
+useEffect(()=>{
+  const handleKeydown=(e:KeyboardEvent)=>{
+    if (e.key==="ArrowUp"){
 
+      e.preventDefault()
+     setCount(prev=> prev +stepp)
+     setHistory(prev=>[...prev,count])
+     
+    }
+    if(e.key === "ArrowDown") {
+      e.preventDefault()
+      setCount(prev=> prev-stepp)
+    setHistory(prev=>[...prev,count])
+
+
+    }
+      
+}
+document.addEventListener("keydown", handleKeydown)
+return ()=> {
+  document.removeEventListener("keydown", handleKeydown)
+}
+
+},[stepp,count])
 
   const handleIncrement = () =>{
   setCount(prevCount =>prevCount + stepp)
