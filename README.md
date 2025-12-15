@@ -43,7 +43,7 @@ You have been tasked to build an advanced counter application. This project will
  Build a React application that features an advanced counter. 
 
 ### Goal Breakdown
-- React Counter 
+- React Counter ()
       →History tracker 
       →Auto-save Functionality 
       →Keyboard Event Listeners 
@@ -82,7 +82,9 @@ You have been tasked to build an advanced counter application. This project will
 ---
 
 ## Build Steps
-- I started by making the project and folder 
+1. I started by making the index.ts 
+   - this gave me the types and interfaces I needed to have in my code
+2. 
 ---
 
 ## Troubleshooting
