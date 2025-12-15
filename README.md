@@ -55,7 +55,8 @@ You have been tasked to build an advanced counter application. This project will
 
 
 ### Questions and Answers
-1. (css question) How can I keep a box static while also adding things to it? 
+1. (css question) How can I keep a box static while also adding things to it?
+using the overflow and changing it to scrollable 
 
 
 ### Input
@@ -96,16 +97,9 @@ You have been tasked to build an advanced counter application. This project will
 ---
 
 ## Troubleshooting
-
-Use a simple troubleshooting mindset.
-
-Ask yourself:  
-- What should happen right now  
-- What is actually happening  
-- Test one assumption at a time  
+---
 
 ### Problems
-List specific problems you faced.
 the problems for this project mostly consisted of type mismatched and finding out what to do. 
 ### Solutions
 Explain how you solved each problem.
