@@ -3,7 +3,7 @@
 import React from 'react'
 import { CounterControlProps } from '../types'
 
-export default function CounterControls({ onIncrement,onDecrement,onReset}:CounterControlProps) {
+export default function CounterControls({ onIncrement,onDecrement,onReset,}:CounterControlProps) {
   return (
     <div>
         <button onClick={onIncrement}>Increment</button>

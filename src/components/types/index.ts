@@ -1,7 +1,9 @@
 // Primitive Alliases 
 
+import { ReactEventHandler } from "react"
+
 //Status is the  UI feedback fr the async or delayed actions 
-export type Status =  "Changes saved!"| "Saving..."
+export type Status =  "idle"|"Changes saved!"| "Saving..."
 // Step contols the count increases or decreaces by
 export type Step = number 
 // History stores an array of past counts 
@@ -37,6 +39,7 @@ export interface CounterControlProps {
     onIncrement: (newStep:Step)=>void
     onDecrement: (newStep:Step)=>void
     onReset: ()=> void
+   
 }
 // this component should map over history and display it 
 // prop for rendering the list
