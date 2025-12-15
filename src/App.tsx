@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { Count, Status, Step } from './components/types'
 import StepInput from './components/StepCount/StepInput'
 import CounterHistory from './components/History/CounterHistory'
+import {motion} from "motion/react"
 function App() {
   const [count, setCount] = useState<Count>(0)
   const [stepp, setStepp] = useState<Step>(1)
@@ -76,9 +77,10 @@ function App() {
   }
   return (
     <>
-      <div id='container'>
+      <motion.div id='container' initial={{scale:0}} animate={{scale:1}}>
 
         <h2>Current Count:</h2>
+  
         <CounterDisplay count={count} />
         <StepInput step={stepp} onChangeStep={handleCHangeStep} />
         <CounterControls
@@ -88,7 +90,7 @@ function App() {
         <p>{message}</p>
         <CounterHistory history={history} />
         <p>Press the Up and down arrows to control the count</p>
-      </div>
+      </motion.div>
 
     </>
 
