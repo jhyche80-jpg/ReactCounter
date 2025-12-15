@@ -14,7 +14,6 @@ export type Count = number
 // This is what lives in the parent code
 export interface  Counter {
     count:Count  // current count value 
-    step:Step // increment and decrement ammout 
     history:History // list of previous count values 
     status: Status // ui Status message 
 }
@@ -23,7 +22,9 @@ export interface  Counter {
 export interface CountDispayProps{
 count:number
 }
-
+export interface CounterProps{
+    count:Count
+}
 //  props for the step input field
 // onchange = calls back to update the step in the parent 
 export interface StepInputProps{
@@ -33,13 +34,13 @@ export interface StepInputProps{
 // //props for the buttons that modify the counter 
 // the parent owns state - this component just triggers actions 
 export interface CounterControlProps {
-    step:Step
-    onIncrement: ()=>void
-    onDecrement: ()=>void
+    onIncrement: (newStep:Step)=>void
+    onDecrement: (newStep:Step)=>void
     onReset: ()=> void
 }
 // this component should map over history and display it 
 // prop for rendering the list
 export interface HistoryListProps{
     history:History
+    
 }
