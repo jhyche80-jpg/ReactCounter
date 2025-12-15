@@ -92,7 +92,7 @@ You have been tasked to build an advanced counter application. This project will
 5. I then made the History tab, I did it by mapping the previous counts that got added to the array ( I later changed the function to properly show the counts in reverse order.)
 6.  I then made the use effect to save the doccument (artifically to show the status')
 7. I also added a use effect that would increment and decrement if the up key and the down key were to be pressed.  
-8. 
+8. I then went to style the page. 
 ---
 
 ## Troubleshooting
@@ -106,23 +106,17 @@ Ask yourself:
 
 ### Problems
 List specific problems you faced.
-
-1.  
-2.  
-3.  
-
+the problems for this project mostly consisted of type mismatched and finding out what to do. 
 ### Solutions
 Explain how you solved each problem.
-
-1.  
-2.  
-3.  
+I asked myself: What do I need to do and how do I branch out to the other areas. and decided to work out of the parent components after creating the types. 
 
 ---
 
 ## Reflection
-Reflect on what you learned, what worked well, and what you would do differently.  
-Include lessons about problem solving and debugging.
+This lab taught me how to create a typed component from scratch and how to effectively use useEffect. It also deepened my understanding of the relationship 
+between parent and child components and how they interact with one another. While the problems I encountered were minimal, I know there is still room for 
+improvement and further learning.
 
 ---
 
