@@ -71,7 +71,7 @@ return ()=> {
   localStorage.clear()
   
  }
- const handleCHangeStep= (e)=> {
+ const handleCHangeStep= (e:React.ChangeEvent<HTMLInputElement>)=> {
   setStepp(parseInt(e.target.value))
  }
   return (

@@ -1,7 +1,5 @@
 // Primitive Alliases 
 
-import { ReactEventHandler } from "react"
-
 //Status is the  UI feedback fr the async or delayed actions 
 export type Status =  "idle"|"Changes saved!"| "Saving..."
 // Step contols the count increases or decreaces by
@@ -30,14 +28,14 @@ export interface CounterProps{
 //  props for the step input field
 // onchange = calls back to update the step in the parent 
 export interface StepInputProps{
-    step: Step
-    onChangeStep: (newStep:Step)=> void 
+   step: Step
+    onChangeStep: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 // //props for the buttons that modify the counter 
 // the parent owns state - this component just triggers actions 
 export interface CounterControlProps {
-    onIncrement: (newStep:Step)=>void
-    onDecrement: (newStep:Step)=>void
+    onIncrement: ()=>void
+    onDecrement: ()=>void
     onReset: ()=> void
    
 }

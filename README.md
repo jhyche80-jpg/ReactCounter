@@ -84,7 +84,15 @@ You have been tasked to build an advanced counter application. This project will
 ## Build Steps
 1. I started by making the index.ts 
    - this gave me the types and interfaces I needed to have in my code
-2. 
+2. I started by structureing what would happen in the main parent component. 
+   - I made it so the count would show by coding the counter display and then makeing the count show on in the App . 
+3. I added buttons 
+   - I added the increment and decrement and reset buttons inputs and the change effects for them 
+4. I then added a component that would be an input (step) theat will be the margin that we would be incremented by and then I updated the functions to reflect that. 
+5. I then made the History tab, I did it by mapping the previous counts that got added to the array ( I later changed the function to properly show the counts in reverse order.)
+6.  I then made the use effect to save the doccument (artifically to show the status')
+7. I also added a use effect that would increment and decrement if the up key and the down key were to be pressed.  
+8. 
 ---
 
 ## Troubleshooting
@@ -127,3 +135,6 @@ Include lessons about problem solving and debugging.
 
 ### Websites Used
 - https://ps-lms.vercel.app/curriculum/se/416/lab-1
+- https://www.geeksforgeeks.org/reactjs/react-onkeydown-event/
+-https://dev.to/barrymichaeldoyle/how-to-build-a-custom-react-hook-to-listen-for-keyboard-events-32b4
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse#:~:text=The%20reverse()%20method%20of,array%20element%20becoming%20the%20first.
